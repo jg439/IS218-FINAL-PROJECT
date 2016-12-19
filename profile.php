@@ -73,7 +73,7 @@
         <hr />
 
         <p class="h4"> Change your default picture</p>
-				<?php echo $user_data['profile'] ?>
+				<img width="100px" height="150px" src="'.$row['profile'].'">
 
 
     </div>
