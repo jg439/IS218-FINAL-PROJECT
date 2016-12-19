@@ -28,7 +28,7 @@ if(isset($_POST['btn-login']))
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Coding Cage : Login</title>
+<title>IS 218 - Login</title>
 <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
 <link href="bootstrap/css/bootstrap-theme.min.css" rel="stylesheet" media="screen">
 <link rel="stylesheet" href="style.css" type="text/css"  />
@@ -42,7 +42,7 @@ if(isset($_POST['btn-login']))
 
        <form class="form-signin" method="post" id="login-form">
 
-        <h2 class="form-signin-heading">Log In to WebApp.</h2><hr />
+        <h2 class="form-signin-heading">Log in</h2><hr />
 
         <div id="error">
         <?php
@@ -74,7 +74,7 @@ if(isset($_POST['btn-login']))
             </button>
         </div>
       	<br />
-            <label>Don't have account yet ! <a href="sign-up.php">Sign Up</a></label>
+            <label>If you don't have an account yet, please sign in <a href="sign-up.php">Sign Up</a></label>
       </form>
 
     </div>
