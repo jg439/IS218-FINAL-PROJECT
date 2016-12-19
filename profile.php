@@ -73,7 +73,8 @@
         <hr />
 
         <p class="h4"> Change your default picture</p>
-				
+				<?php echo $user_data['profile'] ?>
+
 
     </div>
 

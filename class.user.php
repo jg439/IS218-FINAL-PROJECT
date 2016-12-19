@@ -48,7 +48,7 @@ class USER
 	{
 		try
 		{
-			$stmt = $this->conn->prepare("SELECT user_id, user_name, user_email, user_pass, profile FROM users WHERE user_name=:uname OR user_email=:umail ");
+			$stmt = $this->conn->prepare("SELECT user_id, user_name, user_email, user_pass FROM users WHERE user_name=:uname OR user_email=:umail ");
 			$stmt->execute(array(':uname'=>$uname, ':umail'=>$umail));
 			$userRow=$stmt->fetch(PDO::FETCH_ASSOC);
 			if($stmt->rowCount() == 1)
@@ -74,6 +74,7 @@ class USER
 	{
 		if(isset($_SESSION['user_session']))
 		{
+			$user_data = user_data('profile')
 			return true;
 		}
 	}
