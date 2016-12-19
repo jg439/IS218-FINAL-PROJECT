@@ -11,5 +11,6 @@
 	if(!$session->is_loggedin())
 	{
 		// session no set redirects to login page
-		$session->redirect('user-profile.php');
+		$session->redirect('index.php');
+	}
 ?>
