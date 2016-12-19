@@ -74,7 +74,7 @@ class USER
 	{
 		if(isset($_SESSION['user_session']))
 		{
-			$user_data = user_data('profile')
+			$user_data = user_data('profile');
 			return true;
 		}
 	}
