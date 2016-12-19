@@ -15,7 +15,7 @@
 
 ?>
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
@@ -36,13 +36,10 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="http://www.codingcage.com">Coding Cage</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="http://www.codingcage.com/2015/04/php-login-and-registration-script-with.html">Back to Article</a></li>
-            <li><a href="http://www.codingcage.com/search/label/jQuery">jQuery</a></li>
-            <li><a href="http://www.codingcage.com/search/label/PHP">PHP</a></li>
+
           </ul>
           <ul class="nav navbar-nav navbar-right">
 
@@ -77,11 +74,6 @@
 
         <p class="h4">User Home Page</p>
 
-
-    <p class="blockquote-reverse" style="margin-top:200px;">
-    Programming Blog Featuring Tutorials on PHP, MySQL, Ajax, jQuery, Web Design and More...<br /><br />
-    <a href="http://www.codingcage.com/2015/04/php-login-and-registration-script-with.html">tutorial link</a>
-    </p>
 
     </div>
 
