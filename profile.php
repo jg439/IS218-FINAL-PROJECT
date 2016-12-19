@@ -72,7 +72,8 @@
         <a href="profile.php"><span class="glyphicon glyphicon-user"></span> profile</a></h1>
         <hr />
 
-        <p class="h4">Another Secure Profile Page</p>
+        <p class="h4"> Change your default picture</p>
+				
 
     </div>
 

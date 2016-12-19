@@ -73,6 +73,8 @@
        	<hr />
 
         <p class="h4">User Home Page</p>
+				<p class= "h4"> Check my tutorial video!! </p>
+				
 
 
     </div>
