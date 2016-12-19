@@ -5,10 +5,10 @@ $user = new USER();
 
 if($user->is_loggedin()!="")
 {
-	$user->redirect('home.php');
+	$user->redirect('user-profile.php');
 }
 
-if(isset($_POST['btn-signup']))
+if(isset($_POST['btn-register']))
 {
 	$uname = strip_tags($_POST['txt_uname']);
 	$umail = strip_tags($_POST['txt_umail']);
@@ -80,22 +80,43 @@ if(isset($_POST['btn-signup']))
 
     <div class="login-card">
 		<h1>Register</h1><br>
-		<form action ="form.php" method = "post">
+		<form method="post">
+			<?php
+			if(isset($error))
+			{
+				foreach($error as $error)
+				{
+					 ?>
+										 <div>
+												<?php echo $error; ?>
+										 </div>
+										 <?php
+				}
+			}
+			else if(isset($_GET['joined']))
+			{
+				 ?>
+								 Successfully registered <a href='index.php'>login</a> here
+								 </div>
+								 <?php
+			}
+			?>
 			<div>
 				<label for "user">Username</label>
 				<input required type="text" name="user">
 			</div>
 
+			<div>
+				<label for "email">Email</label>
+				<input required type="email" name="email" placeholder="please enter your njit email address">
+			</div>
 
 			<div>
 				<label for "password">Password</label>
 				<input required type="password" name="pass">
 			</div>
 
-			<div>
-				<label for "ucid">UCID</label>
-				<input required type="text" name="ucid" placeholder="contains letters">
-			</div>
+
 
 			<div>
 				<label for "submit">

@@ -55,7 +55,7 @@ if(isset($_POST['btn-login']))
 		</form>
 
 		<div class="login-help">
-			<a href="register.html">Register</a>
+			<a href="register.php">Register</a>
 		</div>
 	</div>
 
