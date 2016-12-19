@@ -46,7 +46,7 @@ if(isset($_POST['btn-register']))
 			else
 			{
 				if($user->register($uname,$umail,$upass)){
-					$user->redirect('sign-up.php?joined');
+					$user->redirect('register.php?joined');
 				}
 			}
 		}
@@ -127,7 +127,7 @@ if(isset($_POST['btn-register']))
 		</form>
 
 		<div class="login-help">
-			<a href="index.html">Login</a>
+			<a href="index.php">Login</a>
 		</div>
 	</div>
 
