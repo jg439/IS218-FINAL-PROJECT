@@ -120,7 +120,7 @@ if(isset($_POST['btn-register']))
 
 			<div>
 				<label for "submit">
-				<input type = "Submit" class="login login-submit" name= "Submit" value = "Submit" >
+				<button type = "Submit" class="login login-submit" name= "Submit" value = "Submit" >
 				</label>
 			</div>
 
