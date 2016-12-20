@@ -3,6 +3,7 @@
 	require_once("session.php");
 
 	require_once("class.user.php");
+
 	$auth_user = new USER();
 
 
