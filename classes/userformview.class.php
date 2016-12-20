@@ -1,8 +1,8 @@
 <?php
 
   class userformview{
-
-     public function getHTML() {
+    
+     public function getHTML($errors='', $form) {
        $form = '
            <form action="index.php?controller=userController" method="post">
              <div>
