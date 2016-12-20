@@ -6,19 +6,8 @@
       if(isset($_GET['action'])){
           $get = $_GET;
           $action = $_GET['action'];
+}
 
-
-	  if($action=="profile"){
-                $user = new userModel;
-                if($user->isLoggedIn()){
-                  $profile = new userProfileView;
-                  $profileHTML = $profile->getHTML();
-                  $this->html .= $profileHTML;
-                } else {
-                  $error = 'PLEASE LOGIN !';
-                }
-            }
-            
   	}
       public function post() {
 
