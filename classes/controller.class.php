@@ -14,7 +14,7 @@
                       <html>
 
                       <ul>
-                        <li><a href="index">Login</a></li>
+                        <li><a href="index.php?controller=userController">Login</a></li>
                         <li><a href="index.php?controller=registrationController">Register</a></li>
                         <li><a href="index">Logout</a></li>
                       </ul>
