@@ -2,38 +2,19 @@
     class registrationController extends controller {
 
     public function get() {
-
-      if(isset($_GET['action'])){
-          $get = $_GET;
-          $action = $_GET['action'];
-}
+      $form = new registrationformview;
+      $form_html = $form->getHTML();
+      $this->html .= $form_html;
 
   	}
       public function post() {
+        print_r($_POST);
+	       $user = new registrationModel;
+	       $user->setUsername($_POST['username']);
+	       $user->setPassword($_POST['password']);
+         $user->setEmail($_POST['email']);
+         $user->setAddress($_POST['password']);
 
-        if($_POST['form']){
-            $db = dbConn::getConnection();
-  	         $stmt = $db->prepare('SELECT username FROM members WHERE username = :username');
-  	          $stmt->execute(array(':username' => $_POST['user_name']));
-  	          $line = $stmt->fetch(PDO::FETCH_ASSOC);
-
-  	  if(!empty($line['username'])){
-  	    $error[] = 'UNVALID USERNAME!';
-  	  }
-
-      if(!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)){
-         	    $error[] = 'Please enter a valid email address';
-  	  } else {
-              $db = dbConn::getConnection();
-  	    $stmt = $db->prepare('SELECT email FROM members WHERE email = :email');
-  	    $stmt->execute(array(':email' => $_POST['email']));
-  	    $line = $stmt->fetch(PDO::FETCH_ASSOC);
-
-  	    if(!empty($line['email'])){
-  	      $error[] = 'Email provided is already in use.';
-  	    }
-      }
-   }
 }
       public function put() {}
       public function delete() {}
