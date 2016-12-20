@@ -1,5 +1,4 @@
 <?php
-
 //DB class that you showed us, using Singleton Pattern
 class dbConn{
   protected static $db;
