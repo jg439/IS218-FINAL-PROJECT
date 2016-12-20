@@ -7,17 +7,7 @@
 
 
            <form action="index.php?controller=registrationController" method="post">
-        <div>
-          <label for="firstname">First Name</label>
-          <input type="text" id="firstname" name="firstname" />
-        </div>
-
-        <div>
-          <label for="lastname">Last Name</label>
-          <input type="text" id="lastname" name="lastname" />
-        </div>
-
-
+      
         <div>
 	         <label for="username">Username</label>
 	         <input type="text" id="username" name="username" />

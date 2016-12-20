@@ -10,8 +10,7 @@
       public function post() {
         print_r($_POST);
 	       $user = new registrationModel;
-         $user->setName($_POST['firstname']);
-          $user->setLastName($_POST['lastname']);
+         
          $user->setUsername($_POST['username']);
 	       $user->setPassword($_POST['password']);
          $user->setEmail($_POST['email']);
