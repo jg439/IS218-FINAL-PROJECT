@@ -6,7 +6,7 @@
   	}
       public function post() {
 
-        if($_POST['form'] == 'sign_up'){
+        if($_POST['form']){
             $db = dbConn::getConnection();
   	         $stmt = $db->prepare('SELECT username FROM members WHERE username = :username');
   	          $stmt->execute(array(':username' => $_POST['user_name']));
