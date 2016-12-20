@@ -13,7 +13,9 @@
       //Adding my index from my before code...
       public function __construct(){
 
-        //this header is going to include the html that users are going first to see to get into my page
+        //this header is going to include the html that users are going first to see to get into my page I have included my tutorial video here too!
+        //Don't forget to include your NAV menu since this is going to be the header for every single page!!!
+        //Remember to change the path for the different sign in and sign up forms.
 
         $header = '<!DOCTYPE>
         <html>
@@ -25,16 +27,12 @@
         </head>
         <body>
 
-        <div class="signin-form">
-        <h1> Welcome to my IS218 Autoload Program!</h1>
-              	<br />
-                    <label> If you have an account, please log in <a href = "index.php">Login in </a></label>
-                    <label>If you do not have an account yet, please sign in <a href="sign-up.php">Sign Up</a></label>
-              </form>
+        //include this nav in the body..
 
-            </div>
-
-        </div> ';
+        <label> If you have an account, please log in <a href = "index.php">Login in </a></label>
+        <label>If you do not have an account yet, please sign in <a href="sign-up.php">Sign Up</a></label>
+        </body>
+        ';
         $this.html-> .= $header;
 
       }

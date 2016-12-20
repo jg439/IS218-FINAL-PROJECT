@@ -1,4 +1,6 @@
 <?php
+  session_start();
+  include 'classes/pdo.class.php';
 
   class app {
     public function __construct() {
