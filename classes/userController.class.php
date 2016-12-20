@@ -4,12 +4,12 @@
       public function get() {
 
 
-	       if(isset($_GET['action'])){
-              $get = $_GET;
-              $action = $_GET['action'];
+	if(isset($_GET['action'])){
+          $get = $_GET;
+          $action = $_GET['action'];
 
 
-	             if($action=="profile"){
+	  if($action=="profile"){
                 $user = new userModel;
                 if($user->isLoggedIn()){
                   $profile = new userProfileView;
@@ -110,9 +110,11 @@
        $user = new userModel;
        $reset = $user->getUserInfomation($oldusername);
        $oldemail = $reset['email'];
+       $first_name = $_POST['first_name'];
+       $last_name = $_POST['last_name'];
        $username = $_POST['username'];
        $email = $_POST['email'];
-       $avtr_url = $reset['avatar_url'];
+       $avtr_url = $reset['avtr_url'];
        $check = false;
        while($check == false) {
          $db = dbConn::getConnection();
@@ -138,7 +140,7 @@
 
        }
 
-       define("UPLOAD_DIR", "/afs/cad.njit.edu/u/j/g/jg439/public_html/IS218FINAL/images/");
+       define("UPLOAD_DIR", "/afs/cad.njit.edu/u/m/l/ml473/public_html/New218/img/");
 
 	  if (isset($_FILES["avatar"]["name"]) && $_FILES["avatar"]["tmp_name"] != ""){
 	      $fileName = $_FILES["avatar"]["name"];
@@ -165,7 +167,7 @@
        		goto end;
               }
 
-	      $avatar_url = "images/$db_file_name";
+	      $avtr_url = "img/$db_file_name";
               $moveResult = move_uploaded_file($fileTmpLoc, UPLOAD_DIR . "/$db_file_name");
 
 	      if ($moveResult != true) {
@@ -174,7 +176,7 @@
               }
           }
 
-	    $user->update($oldusername,$username, $email, $avatar_url);
+	    $user->update($oldusername, $first_name, $last_name, $username, $email, $avtr_url);
             end:
        }
 
@@ -217,5 +219,4 @@
     public function put() {}
     public function delete() {}
 }
-
  ?>

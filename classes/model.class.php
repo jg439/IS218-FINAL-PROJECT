@@ -6,7 +6,7 @@
       session_start();
       $this->guid = uniqid();
     }
-    public function save() {
+    public function register() {
       $_SESSION[$this->guid] = (array) $this;
     }
   }
