@@ -13,7 +13,11 @@
         $header = '<!DOCTYPE HTML>
                       <html>
 
-                  <p> This is a header</p>
+                      <ul>
+                        <li><a href="#home">Login</a></li>
+                        <li><a href="#news">Register</a></li>
+                        <li><a href="#contact">Logout</a></li>
+                      </ul>
 
 
 
