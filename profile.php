@@ -73,7 +73,12 @@
         <hr />
 
         <p class="h4"> Change your default picture</p>
-				<img width="100px" height="150px" src="'.$row['profile'].'">
+
+				<form id="edit" method="post" enctype="multipart/form-data">
+                <img width="100px" height="150px" src="'.$row['profile'].'">
+                  <p><input type="file" name="avatar"></p>
+
+			</form>
 
 
     </div>
