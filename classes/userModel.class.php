@@ -18,7 +18,7 @@
       try {
         //Using prepared statements with PDO
         $db = dbConn::getConnection();
-	      $stmt = $db->prepare('SELECT memberID, avtr_url, email FROM members WHERE username = :username');
+	      $stmt = $db->prepare('SELECT memberID, avatar_url, email FROM members WHERE username = :username');
         $stmt->execute(array('username' => $username));
 	       return $stmt->fetch();
       }catch(PDOException $e) {
@@ -67,7 +67,7 @@
       }
     }
 
-    public function update($oldusername, $username, $email, $avtr_url) {
+    public function update($oldusername, $username, $email, $avatar_url) {
       try {
         $db = dbConn::getConnection();
         $stmt = $db->prepare('UPDATE members SET username=:username, email=:email, avatar_url=:avatar_url WHERE username=:old');

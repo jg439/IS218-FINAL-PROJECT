@@ -4,12 +4,12 @@
       public function get() {
 
 
-	if(isset($_GET['action'])){
-          $get = $_GET;
-          $action = $_GET['action'];
+	       if(isset($_GET['action'])){
+              $get = $_GET;
+              $action = $_GET['action'];
 
 
-	  if($action=="profile"){
+	             if($action=="profile"){
                 $user = new userModel;
                 if($user->isLoggedIn()){
                   $profile = new userProfileView;
