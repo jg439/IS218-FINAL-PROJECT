@@ -8,15 +8,15 @@
       public function put() {}
       public function delete() {}
 
-
+      //If you have time to finish add css..
       public function __construct(){
         $header = '<!DOCTYPE HTML>
                       <html>
 
                       <ul>
-                        <li><a href="#home">Login</a></li>
-                        <li><a href="#news">Register</a></li>
-                        <li><a href="#contact">Logout</a></li>
+                        <li><a href="index">Login</a></li>
+                        <li><a href="index.php?controller=registrationController">Register</a></li>
+                        <li><a href="index">Logout</a></li>
                       </ul>
 
 
