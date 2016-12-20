@@ -2,7 +2,7 @@
     class registrationController extends controller {
 
     public function get() {
-
+      $form = new registrationformview;
   	}
       public function post() {
 
