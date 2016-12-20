@@ -16,6 +16,7 @@
                       <ul>
                         <li><a href="index.php?controller=userController">Login</a></li>
                         <li><a href="index.php?controller=registrationController">Register</a></li>
+                        <li><a href= "index.php"> Back to Home</a></li>
                       </ul>
 
 
